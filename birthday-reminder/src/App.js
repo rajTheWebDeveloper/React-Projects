@@ -1,22 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import birthdayData from './birthdayData';
+import BirthdayList from './BirthdayList';
+import { useState } from 'react';
 
 function App() {
+  let [list,setList]=useState(birthdayData)
   return (
     <section className="App">
-      {birthdayData.map((birthday)=>
-      {
-        return <article>
-          <aside className='image'>
-            <img src={birthday.image} alt="" />
-          </aside>
-          <aside className='info'>
-            <h2>{birthday.name}</h2>
-            <p>{birthday.age}</p>
-          </aside>
-        </article>
-      })}
+      <h2>{list.length} Birthdays Today</h2>
+      <BirthdayList list={list}/>
+      <button onClick={()=>setList([])}>Clear All</button>
     </section>
   );
 }
