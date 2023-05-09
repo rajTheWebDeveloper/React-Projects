@@ -55,7 +55,7 @@ aside h2
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
-  line-height:1.7;
+  line-height:1.2;
   margin-bottom: 0.8rem;
 }
 aside img
@@ -66,7 +66,7 @@ aside img
 }
 .info
 {
-    padding: 1.7rem;
+    padding:0 1.7rem 1.7rem 1.7rem;
 }
 .price
 {
