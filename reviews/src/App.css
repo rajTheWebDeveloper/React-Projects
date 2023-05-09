@@ -1,0 +1,116 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+.card
+{
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    height: 450px;
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+    border-radius: 5px;
+    box-shadow: -0.5px -0.5px 1px #d4d7d8;
+}
+.card:hover
+{
+  box-shadow: -0px -0px 4px gray;
+  cursor: pointer;
+}
+.card img
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card h2
+{
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.card h3
+{
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  color: #645cff;
+}
+.card p
+{
+  color: #75757d;
+  line-height: 1.6;
+}
+
+.random
+{
+    padding: 7px 16px;
+    margin-top: 0.8rem;
+    background-color: #645cff;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    border-radius: 3px;
+}
+
+.card::before
+{
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #645cff;
+  transform: translate(6px,-6px);
+  z-index:-1;
+  border-radius: 50%;
+}
+
+.button-sec
+{
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.button-sec button
+{
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: #645cff;
+  cursor: pointer;
+}
+.random
+{
+  cursor: pointer;
+}
+
+@media(max-width:600px)
+{
+  .card
+  {
+    padding: 1rem;
+  }
+}
