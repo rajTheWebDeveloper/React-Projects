@@ -29,7 +29,6 @@ section h2, .no-tours
   font-weight: 500;
   margin-top: 2rem;
 }
-
 article
 {
   display: grid;
@@ -49,7 +48,7 @@ aside
 }
 aside img
 {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 aside h2  
 {
