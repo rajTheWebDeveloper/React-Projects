@@ -1,0 +1,90 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: aqua;
+  transition: all 0.5s ease;
+}
+.App
+{
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -1px -1px 3px 3px gray;
+}
+.App h2
+{
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.card
+{
+  padding: 2rem;
+}
+aside
+{
+  padding: 0.4rem 1rem;
+  margin: 1rem 0;
+  line-height: 3;
+  box-shadow: -1px -1px 2px gray;
+  border-radius: 5px;
+}
+aside p
+{
+  line-height: 1.5;
+  color: rgb(44, 44, 44);
+}
+aside h3
+{
+  font-weight: 600;
+  color: rgb(63, 62, 62);
+  font-size: 1.1rem;
+}
+.control-center
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expansion
+{
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #164e63;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media(max-width:650px)
+{
+  aside
+  {
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  .control-center
+  {
+    line-height: 1.5;
+  }
+}
