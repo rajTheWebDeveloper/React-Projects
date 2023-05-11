@@ -1,0 +1,175 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f5f9;
+}
+.App
+{
+  max-width: 1170px;
+  width: 90vw;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+}
+.tabs
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap:1.8rem;
+  margin-top: 2rem;
+}
+.tab-control
+{
+  text-align: center;
+  margin-top: 1rem;
+}
+.tab-control button
+{
+  margin: 2rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transition: border 0.15s ease;
+  padding: 0.2rem;
+}
+.tab-control button:hover
+{
+  color:#14b8a6;
+}
+.tab-info h2
+{
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+.tab-info
+{
+  line-height: 2.1;
+}
+.tab-info button
+{
+  padding:0.2rem 0.7rem;
+  background-color: #cbd5e1;
+  font-family:monospace;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+.duty-info 
+{
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+.duty-info p
+{
+  margin-bottom: 1rem;
+}
+.sub-info
+{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  grid-column-gap:2rem;
+}
+.arrow-btn
+{
+  color: #14b8a6;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.tab-info p:first-of-type
+{
+  color: #64748b;
+}
+.sub-info p:first-of-type
+{
+  color:#334155;
+}
+.tab-control button
+  {
+    line-height: 1;
+    margin: 0.4rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+.tab-control button::before
+  {
+    position: absolute;
+    top:120%;
+    left:0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #14b8a6;
+    opacity: 0;
+  }
+  .tab-control button:hover::before
+  {
+    opacity: 1;
+  }
+  .button-common:hover
+  {
+    color: #14b8a6;
+  }
+  .variance
+  {
+    border: 2px solid #14b8a6;
+    background-color: yellow;
+  }
+@media(min-width:1000px)
+{
+  .App
+  {
+    padding: 2rem;
+  }
+  .tabs
+  {
+    grid-template-columns: 1fr 5fr;
+  }
+  .tab-control
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-control button
+  {
+    line-height: 1;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .tab-control button::before
+  {
+    position: absolute;
+    top:0%;
+    left:-10%;
+    content: "";
+    height: 100%;
+    width: 3%;
+    background-color: #14b8a6;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  .tab-control button:hover::before
+  {
+    opacity: 1;
+    color: white;
+  }
+  .variance
+  {
+    border-left: 2px solid #14b8a6;
+    background-color: yellow;
+  }
+}
