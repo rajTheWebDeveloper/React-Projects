@@ -1,0 +1,149 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #f1f5f9;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.App
+{
+  width: 100vw;
+  margin-top: 1rem;
+  overflow-x: hidden
+}
+.input-section
+{
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+}
+.input-section h2
+{
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  margin-right: 2rem;
+}
+.cc
+{
+  height: 33px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 0.2rem;
+}
+.cc input:first-of-type
+{
+  border: 1px solid white;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+}
+.cc input
+{
+  height: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+.cc button
+{
+  height: 100%;
+  padding: 0rem 1rem;
+  outline: none;
+  border: none;
+  background-color: #3c3799;
+  color: white;
+  cursor: pointer;
+}
+.color-section
+{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.color-section aside
+{
+    height: 115px;
+    padding: 1rem;
+    cursor: pointer;
+}
+.color-section p:last-of-type
+{
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+}
+.input-section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.input-section h2
+{
+  margin-bottom: 1rem;
+}
+@media(min-width:650px)
+{
+    .color-section
+    {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .input-section
+    {
+      flex-direction: row;
+      padding: 2.5rem 3rem;
+    }
+    .color-section aside
+    {
+        height: 118px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
+@media(min-width:900px)
+{
+    .color-section
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .color-section aside
+    {
+        height: 123px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
+@media(min-width:1200px)
+{
+    .color-section
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .color-section aside
+    {
+        height: 128px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
+@media(min-width:1400px)
+{
+    .color-section
+    {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .color-section aside
+    {
+        height: 133px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
