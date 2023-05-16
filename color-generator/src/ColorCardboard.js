@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import { ToastContainer } from 'react-toastify';
 import Values from 'values.js'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ColorCardboard = () => {
     let [input,setInput]=useState("#389384");
@@ -22,6 +25,12 @@ const ColorCardboard = () => {
             setButtonBackColor("")
         }
     }
+    const notify = (items) => toast(`copied #${items.hex.toUpperCase()} to clipboard`);
+    const copyClick=(items)=>
+    {
+        navigator.clipboard.writeText('#'+items.hex.toUpperCase())
+        notify(items)
+    }
   return (
     <main>
         <article className="input-section">
@@ -40,11 +49,12 @@ const ColorCardboard = () => {
             {
                 textColor="white";
             }
-            return <aside key={idx} className='color-boxes' onClick={()=>navigator.clipboard.writeText('#'+items.hex.toUpperCase())} style={{backgroundColor:'#'+items.hex,color:textColor}}>
+            return <aside key={idx} className='color-boxes' onClick={()=>copyClick(items)} style={{backgroundColor:'#'+items.hex,color:textColor}}>
                 <p>{items.weight}%</p>
                 <p>#{items.hex}</p>
             </aside>
            })}
+           <ToastContainer/>
         </article>
     </main>
   )
