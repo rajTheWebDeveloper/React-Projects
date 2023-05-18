@@ -1,0 +1,148 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #f1f5f9;
+}
+.total-nav
+{
+  width: 100vw;
+  background-color: white;
+}
+nav
+{
+  max-width: 1170px;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.nav-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-center
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.nav-center li
+{
+  list-style-type: none;
+}
+.nav-center a
+{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+}
+.hamburger
+{
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: dodgerblue;
+}
+.nav-icons
+{
+  display: none;
+  cursor: pointer;
+  color: dodgerblue;
+}
+.nav-center li
+{
+  margin-top: 0.5rem;
+  padding:0.5rem 0.5rem;
+  border-radius: 5px;
+  color: black;
+}
+.nav-center li:hover
+{
+  background-color: dodgerblue;
+  cursor: pointer;
+  color: white;
+}
+.nav-center-inactive
+{
+  display: none;
+}
+.nav-center a
+{
+  display: block;
+  color: black;
+}
+.nav-header h2
+{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(to right,dodgerblue,black);
+  padding: 0.2rem 0.3rem;
+  border-radius: 5px;
+}
+.nav-header span
+{
+  color: dodgerblue;
+}
+.nav-center a:hover
+{
+  color: white;
+}
+@media(min-width:750px)
+{
+  .nav-header
+  {
+    width: auto;
+  }
+  .hamburger
+  {
+    display: none;
+  }
+  nav
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-center 
+  {
+    margin-top: 0;
+  }
+  .nav-center
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-icons
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-center li
+  {
+    margin-right: 1rem;
+    margin-top: 0;
+    padding:0;
+  }
+  .nav-icons p
+  {
+    margin-right: 1rem;
+  }
+  .nav-center li:hover
+  {
+    background: transparent;
+    color: black;
+  }
+  .nav-center a
+  {
+    color: black !important;
+  }
+}
