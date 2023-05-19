@@ -1,0 +1,153 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #f1f5f9;
+  transition: all 0.3s ease;
+}
+.sidebar-btn
+{
+  position: absolute;
+  top:1.5rem;
+  left: 1.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.sidebar
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  max-width: 350px;
+  background-color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 6fr 0.5fr;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.side-icons
+{
+  display: flex;
+  justify-content: center;
+  padding-right: 1.7rem;
+}
+.side-icons p
+{
+  margin-right: 1rem;
+  color: dodgerblue;
+  font-size: 1.3rem;
+}
+.side-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 1.7rem;
+}
+.side-links
+{
+  padding-right: 0;
+  margin-right: 0;
+}
+.side-links p
+{
+  margin:0.7rem 0;
+  padding: 0.7rem 1.7rem;
+  transition: all 0.35s ease;
+}
+.side-links p span
+{
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.side-links p span:first-child
+{
+  color: #475569;
+}
+.side-links p:hover
+{
+  background-color: #f1f5f9;
+  cursor: pointer;
+}
+.sidebar-active
+{
+  transform: translateX(0%);
+}
+.side-header h2
+{
+  background:linear-gradient(to left,black,dodgerblue);
+  color: white;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.modal-btn
+{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  padding:0.5rem 1.2rem;
+  border: none;
+  outline: none;
+  background-color: #3596dc;
+  color: white;
+  border-radius: 4px;
+}
+.modal
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: display 0.3s ease;
+}
+.center-box
+{
+  max-width: 500px;
+  width: 90vw;
+  height: 215px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+}
+.modal-active
+{
+  display: flex;
+}
+.modal-cross
+{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.side-cross
+{
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
